@@ -29,6 +29,7 @@ package com.apress.cems.pojos.repos;
 
 import com.apress.cems.dao.Storage;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -40,4 +41,6 @@ public interface StorageRepo extends AbstractRepo<Storage> {
     Optional<Storage> findByName(String name);
 
     Optional<Storage> findByLocation(String location);
+
+    List<Storage> findAll();
 }
